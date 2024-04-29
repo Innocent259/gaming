@@ -4,7 +4,6 @@ import ranking from '../assets/images/ranking.png';
 import earning from '../assets/images/earning.png';
 import share from '../assets/images/share.png';
 import pearl from '../assets/images/pearl.png';
-import NFT from '../assets/images/NFT.png';
 import UI from '../assets/images/UI & Logo (1).png';
 import flower from '../assets/images/icons (5).png';
 import { CiCirclePlus } from "react-icons/ci";
@@ -16,7 +15,6 @@ const Profile: React.FC = () => {
     return (
         <div className='flex flex-col gap-2'>
             <div>
-                <div className='flex justify-between'></div>
                 <div className='flex justify-between items-center bg-[#ddd]'>
                     <img src={UI} alt="UI design" />
                 </div>
@@ -30,7 +28,7 @@ const Profile: React.FC = () => {
                             <div key={item.id} className='flex gap-4 pt-9'>
                                 <img src={item.profile[0].image} alt="Profile picture" className='w-[80px] h-[80px] border-4 rounded-full border-green-600' />
                                 <div className='pt-0'>
-                                    <p>{item.profile[0].username}</p>
+                                    <p className='text-shadow-1 font-bold text-sm'>{item.profile[0].username}</p>
                                     <div>
                                         {item.profile[0].highlights.map((high, index) => (
                                             <div key={index} className='grid grid-cols-2 gap-1 text-center text-[8px]'>
@@ -146,8 +144,35 @@ const Profile: React.FC = () => {
                             <p className='text-yellow-500 uppercase text-xs font-bold'>Make sure to collect your daily pearls to qualify for the weekly $Koko lottery!</p>
                         </span>
                     </div>
-                    <div className='bg-slate-500 opacity-70 p-2'>
-                        <img src={NFT} alt="NFT" />
+                    <div className='bg-slate-500 opacity p-2'>    
+                        <div className='flex flex-col gap-4'>
+                            <div className='flex justify-between items-center'>
+                                <h1 className='text-xl text-white font-extrabold underline'>YOUR KOKOMO NFTs</h1>
+                                <button className='text-white text-xl font-extrabold'>
+                                    <CiCirclePlus />
+                                </button>
+                            </div>
+                            <div className='flex justify-between w-8/12 mx-auto text-center'>
+                                <div className='flex flex-col gap-1 items-center'>
+                                    <span className='w-10 h-10 border-2 border-teal-900 rounded-full'>
+                                        <img src="https://cdn.imxrarity.io/0x6a48058d26244b4f52ae22fad059e20606909e82.png" alt="Roller NFT" />
+                                    </span>
+                                    <h2 className='uppercase text-xs font-extrabold text-shadow'>High Roller</h2>
+                                </div>
+                                <div className='flex flex-col gap-1 items-center'>
+                                    <span className='w-10 h-10 border-2 border-teal-900 rounded-full'>
+                                        <img src="https://www.ggpoker.com/wp-content/uploads/2022/07/Logo_HighRollers-1024x1024-1-1024x1024.png" alt="Roller NFT" />
+                                    </span>
+                                    <h2 className='uppercase text-xs text-black font-bold text-shadow'>Top-rated</h2>
+                                </div>
+                                <div className='flex flex-col gap-1 items-center'>
+                                    <span className='w-10 h-10 border-2 border-teal-900 rounded-full'>
+                                        <img src="https://www.ggpoker.com/wp-content/uploads/2022/07/Logo_HighRollers-1024x1024-1-1024x1024.png" alt="Roller NFT" />
+                                    </span>
+                                    <h2 className='uppercase text-xs text-black font-bold text-shadow'>Sense</h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
