@@ -4,10 +4,10 @@ import ranking from '../assets/images/ranking.png';
 import earning from '../assets/images/earning.png';
 import share from '../assets/images/share.png';
 import pearl from '../assets/images/pearl.png';
-import UI from '../assets/images/UI & Logo (1).png';
 import flower from '../assets/images/icons (5).png';
 import { CiCirclePlus } from "react-icons/ci";
 import { FaCoins } from "react-icons/fa";
+import { IoIosArrowBack } from "react-icons/io";
 import { data } from '../assets/data';
 
 const Profile: React.FC = () => {
@@ -15,8 +15,14 @@ const Profile: React.FC = () => {
     return (
         <div className='flex flex-col gap-2 z-10'>
             <div>
-                <div className='flex justify-between items-center bg-[#ddd]'>
-                    <img src={UI} alt="UI design" />
+                <div className='flex justify-between items-center bg-[#ddd] p-1'>
+                    <div className='flex gap-1 items-center text-2xl text-[#007bff]'>
+                        <IoIosArrowBack />
+                        <h2>Back</h2>
+                    </div>
+                    <div className='bg-[#28a745] rounded-full p-2 w-8 h-8 flex items-center justify-center'>
+                        <p className='text-white font-semibold'>M</p>
+                    </div>
                 </div>
                 <div className='flex flex-col'>
                     <div className='relative'>
