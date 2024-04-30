@@ -8,7 +8,7 @@ const Browse: React.FC = () => {
       <div className='bg-no-repeat bg-left w-1/6' style={{ backgroundImage: `url(${leftFlower})` }}>
       </div>
       <div className='flex items-center justify-center pb-2 bg-transparent'>
-        <button className='absolute left-1/2 -top-6 transform -translate-x-1/2'>
+        <button className='absolute left-1/2 -top-6 transform -translate-x-1/2 cursor-pointer'>
           <img src={otherButton} alt="Button" />
         </button>
         <ul className='flex flex-col gap-2 pt-8'>

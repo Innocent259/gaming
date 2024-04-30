@@ -64,7 +64,7 @@ const Profile: React.FC = () => {
                             <h2 className='text-center text-xs px-1'>Invite your friends and earn <span className='text-sm font-bold text-green-700 uppercase'>$Koko</span></h2>
                             <div className='flex px-1'>
                                 <img src={flower} alt="Flower Image" className='w-2' />
-                                <button className='bg-blue-800 text-[5px] italic px-2 ml-2 border-black border-[1px] rounded-sm hover:bg-blue-500'>Invite friends</button>
+                                <button className='bg-blue-800 text-[5px] italic px-2 ml-2 border-black border-[1px] rounded-sm hover:bg-blue-500 cursor-pointer'>Invite friends</button>
                             </div>
                         </div>
                     </div>
@@ -107,7 +107,7 @@ const Profile: React.FC = () => {
                                     ))
                                 }
                             </div>
-                            <button className='absolute top-2 right-2 text-xl text-white font-extrabold'>
+                            <button className='absolute top-2 right-2 text-xl text-white font-extrabold cursor-pointer'>
                                 <CiCirclePlus />
                             </button>
                         </div>
@@ -117,7 +117,7 @@ const Profile: React.FC = () => {
                                     <h1 className='uppercase text-xl font-extrabold underline'>Earnings</h1>
                                     <img src={earning} alt="Earnings" className='w-6' />
                                 </span>
-                                <button className='absolute top-2 right-2 text-xl font-extrabold'>
+                                <button className='absolute top-2 right-2 text-xl font-extrabold cursor-pointer'>
                                     <CiCirclePlus />
                                 </button>
                             </div>
@@ -125,7 +125,7 @@ const Profile: React.FC = () => {
                                 <h1 className='text-center align-middle text-xl text-yellow-500 font-bold'>$9,885</h1>
                             </span>
                         </div>
-                        <button className='absolute w-28 flex align-middle -bottom-4'>
+                        <button className='absolute w-28 flex align-middle -bottom-4 cursor-pointer'>
                             <img src={share} alt="Twitter button" />
                         </button>
                     </div>
@@ -135,7 +135,7 @@ const Profile: React.FC = () => {
                                 <h1 className='uppercase text-xl text-white font-extrabold underline'>Pearls</h1>
                                 <img src={pearl} alt="Pearl" className='w-6' />
                             </span>
-                            <button className='text-xl text-white font-extrabold'>
+                            <button className='text-xl text-white font-extrabold cursor-pointer'>
                                 <CiCirclePlus />
                             </button>
                         </div>
@@ -148,7 +148,7 @@ const Profile: React.FC = () => {
                         <div className='flex flex-col gap-4'>
                             <div className='flex justify-between items-center'>
                                 <h1 className='text-xl text-white font-extrabold underline'>YOUR KOKOMO NFTs</h1>
-                                <button className='text-white text-xl font-extrabold'>
+                                <button className='text-white text-xl font-extrabold cursor-pointer'>
                                     <CiCirclePlus />
                                 </button>
                             </div>
