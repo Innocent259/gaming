@@ -13,7 +13,7 @@ import { data } from '../assets/data';
 const Profile: React.FC = () => {
 
     return (
-        <div className='flex flex-col gap-2'>
+        <div className='flex flex-col gap-2 z-10'>
             <div>
                 <div className='flex justify-between items-center bg-[#ddd]'>
                     <img src={UI} alt="UI design" />
@@ -73,7 +73,7 @@ const Profile: React.FC = () => {
             <div className='px-2'>
                 <div className='flex flex-col gap-2'>
                     <div className='flex gap-2 relative place-content-center text-white'>
-                        <div className='w-1/2 bg-slate-500 bg-opacity-70  relative p-2'>
+                        <div className='w-1/2 bg-slate-500 bg-opacity-50  relative p-2'>
                             <div className='flex flex-col gap-2'>
                                 <span className='flex gap-2 items-center'>
                                     <h1 className='uppercase text-xl font-extrabold underline'>Rankings</h1>
@@ -111,7 +111,7 @@ const Profile: React.FC = () => {
                                 <CiCirclePlus />
                             </button>
                         </div>
-                        <div className='w-1/2 bg-slate-500 bg-opacity-70 relative p-2 flex flex-col'>
+                        <div className='w-1/2 bg-slate-500 bg-opacity-50 relative p-2 flex flex-col'>
                             <div className='flex flex-col'>
                                 <span className='flex gap-2 items-center'>
                                     <h1 className='uppercase text-xl font-extrabold underline'>Earnings</h1>
@@ -129,7 +129,7 @@ const Profile: React.FC = () => {
                             <img src={share} alt="Twitter button" />
                         </button>
                     </div>
-                    <div className=' bg-slate-500 bg-opacity-70 p-2 mt-4'>
+                    <div className=' bg-slate-500 bg-opacity-50 p-2 mt-4'>
                         <div className='flex justify-between items-center'>
                             <span className='flex gap-2 items-center'>
                                 <h1 className='uppercase text-xl text-white font-extrabold underline'>Pearls</h1>
@@ -144,7 +144,7 @@ const Profile: React.FC = () => {
                             <p className='text-yellow-500 uppercase text-xs font-bold'>Make sure to collect your daily pearls to qualify for the weekly $Koko lottery!</p>
                         </span>
                     </div>
-                    <div className='bg-slate-500 bg-opacity p-2'>    
+                    <div className='bg-slate-500 bg-opacity-70 p-2'>    
                         <div className='flex flex-col gap-4'>
                             <div className='flex justify-between items-center'>
                                 <h1 className='text-xl text-white font-extrabold underline'>YOUR KOKOMO NFTs</h1>
