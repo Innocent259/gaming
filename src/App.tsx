@@ -6,7 +6,7 @@ import backgroundImage from './assets/images/screen.png'
 function App() {
 
   return (
-    <div className='h-screen flex flex-col justify-between' style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div className='h-screen flex flex-col gap-6 justify-between' style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <Profile />
       <Browse />
     </div>
