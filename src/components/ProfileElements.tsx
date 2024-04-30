@@ -24,25 +24,25 @@ const ProfileElements = () => {
                             {
                                 data.map(item => (
                                     <div key={item.id} className='flex flex-col gap-2 uppercase'>
-                                        <div className='flex gap-2'>
+                                        <div className='flex gap-2 items-center'>
                                             <img src={item.ranking[0].url} alt="Game 1" className='w-10 h-10' />
-                                            <div className='flex flex-col'>
-                                                <h1 className='text-sm'>{item.ranking[0].title}</h1>
-                                                <p className='text-xs'>top {item.ranking[0].score}%</p>
+                                            <div className='flex flex-col py-1'>
+                                                <h1 className='text-xs text-black font-extrabold text-shadow'>{item.ranking[0].title}</h1>
+                                                <p className='text-[8px]'>top {item.ranking[0].score}%</p>
                                             </div>
                                         </div>
-                                        <div className='flex gap-2'>
+                                        <div className='flex gap-2 justify-items-center'>
                                             <img src={item.ranking[1].url} alt="Rank 2" className='w-10 h-10' />
-                                            <div>
-                                                <h1 className='text-sm'>{item.ranking[1].title}</h1>
-                                                <p className='text-xs'>top {item.ranking[1].score}</p>
+                                            <div className='flex flex-col py-1'>
+                                                <h1 className='text-xs text-black font-extrabold text-shadow'>{item.ranking[1].title}</h1>
+                                                <p className='text-[8px]'>top {item.ranking[1].score}</p>
                                             </div>
                                         </div>
-                                        <div className='flex gap-2'>
+                                        <div className='flex gap-2 items-center'>
                                             <img src={item.ranking[2].url} alt="Rank 3" className='w-10 h-10' />
-                                            <div>
-                                                <h1 className='text-sm'>{item.ranking[2].title}</h1>
-                                                <p className='text-xs'>{item.ranking[2].score}</p>
+                                            <div className='flex flex-col py-1'>
+                                                <h1 className='text-xs text-black font-extrabold text-shadow'>{item.ranking[2].title}</h1>
+                                                <p className='text-[8px]'>{item.ranking[2].score}</p>
                                             </div>
                                         </div>
                                     </div>
