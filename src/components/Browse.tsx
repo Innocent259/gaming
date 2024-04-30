@@ -4,7 +4,7 @@ import otherButton from '../assets/images/other button.png'
 
 const Browse: React.FC = () => {
   return (
-    <div className='z-50 flex justify-between bg-cyan-500 relative'>
+    <div className='flex justify-between bg-cyan-500 relative'>
       <div className='bg-no-repeat bg-left w-1/6' style={{ backgroundImage: `url(${leftFlower})` }}>
       </div>
       <div className='flex items-center justify-center pb-2 bg-transparent'>
